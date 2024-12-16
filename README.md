@@ -6,7 +6,7 @@ This example demonstrates how to use Zappar's World Tracking and User Placement 
 
 To try the example yourself, scan this QR code with your phone:
 
-![QR Code](/docs/media/qrcode.png)
+<img src="docs/media/qr.png" width="200" alt="Example GIF">
 
 To run this example:
 
