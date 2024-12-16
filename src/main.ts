@@ -4,6 +4,9 @@ import * as ZapparThree from '@zappar/zappar-threejs';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import './style.css';
 
+// eslint-disable-next-line n/no-unsupported-features/node-builtins
+const modelUrl = new URL('/model.glb', import.meta.url).href;
+
 const renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -48,7 +51,7 @@ const trackerGroup = new ZapparThree.UserPlacementAnchorGroup(
 scene.add(trackerGroup, featurepoints);
 
 const loader = new GLTFLoader();
-loader.load('/model.glb', gltf => {
+loader.load(modelUrl, gltf => {
   const model = gltf.scene;
   model.scale.setScalar(0.075);
   trackerGroup.add(model);
