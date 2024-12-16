@@ -9,6 +9,7 @@ const config: UserConfig = {
   server: {
     host: true,
   },
+  base: '/vite-zappar-three-world-tracking/',
 };
 
 export default config;
