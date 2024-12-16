@@ -15,24 +15,24 @@ To run this example:
 
 ## Placement Group Properties
 
-| Setting                                     | Type                  | Default Value                | Description                                                                        |
-| ------------------------------------------- | --------------------- | ---------------------------- | ---------------------------------------------------------------------------------- |
-| `startInPlacementMode`                      | `boolean`             | `false`                      | If `true`, the placement UI will start showing on launch.                          |
-| `placeOnPlanes`                             | `boolean`             | `true`                       | If `true`, placement will occur on detected planes.                                |
-| `placeOnGround`                             | `boolean`             | `false`                      | If `true`, placement will occur on the ground anchor, if found.                    |
-| `visualizePlanesDuringPlacement`            | `boolean`             | `true`                       | If `true`, detected planes are visualized during placement.                        |
-| `showContentDuringPlacement`                | `boolean`             | `true`                       | If `true`, the object will be visible while placing.                               |
-| `showPlaceButton`                           | `boolean`             | `true`                       | If `true`, the place button is shown.                                              |
-| `showPlaceButtonIcon`                       | `boolean`             | `true`                       | If `true`, the place button icon is shown.                                         |
-| `placeButtonText`                           | `string`              | `""`                         | The text displayed on the place button.                                            |
-| `showRestartPlacementButton`                | `boolean`             | `true`                       | If `true`, the restart placement button is shown.                                  |
-| `showRestartPlacementButtonIcon`            | `boolean`             | `true`                       | If `true`, the restart placement button icon is shown.                             |
-| `restartPlacementButtonText`                | `string`              | `""`                         | The text displayed on the restart placement button.                                |
-| `longPressToMove`                           | `LongPressMode`       | `LongPressMode.none`         | Defines behavior of long press, supports `none`, `toggle`, and `hold`.             |
-| `showLongPressInstructionOnPlace`           | `boolean`             | `false`                      | If `true`, show an instruction for how to move the object when place first occurs. |
-| `longPressInstruction`                      | `string`              | `"Tap and hold to move"`     | Instruction message shown at the initial placement.                                |
-| `placeButtonHorizontalAlignment`            | `HorizontalAlignment` | `HorizontalAlignment.center` | Horizontal alignment of the place button. `left`, `center`, `right`.               |
-| `placeButtonVerticalAlignment`              | `VerticalAlignment`   | `VerticalAlignment.bottom`   | Vertical alignment of the place button. `top`, `center`, `bottom`.                 |
-| `restartPlacementButtonHorizontalAlignment` | `HorizontalAlignment` | `HorizontalAlignment.left`   | Horizontal alignment of the restart button. `left`, `center`, `right`.             |
-| `restartPlacementButtonVerticalAlignment`   | `VerticalAlignment`   | `VerticalAlignment.bottom`   | Vertical alignment of the restart button. `top`, `center`, `bottom`.               |
-| `placeUIClassList`                          | `string[]`            | `["zappar-three-place-ui"]`  | Additional CSS classes for the place UI.                                           |
+| Setting                                     | Type                  | Description                                                                                                              |
+| ------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `startInPlacementMode`                      | `boolean`             | Controls if the placement UI shows on launch. Defaults to `false`.                                                       |
+| `placeOnPlanes`                             | `boolean`             | Controls if placement occurs on detected planes. Defaults to `true`.                                                     |
+| `placeOnGround`                             | `boolean`             | Controls if placement occurs on the ground anchor, if found. Defaults to `false`.                                        |
+| `visualizePlanesDuringPlacement`            | `boolean`             | Controls if detected planes are visualized during placement. Defaults to `true`.                                         |
+| `showContentDuringPlacement`                | `boolean`             | Controls if the object is visible while placing. Defaults to `true`.                                                     |
+| `showPlaceButton`                           | `boolean`             | Controls if the place button is shown. Defaults to `true`.                                                               |
+| `showPlaceButtonIcon`                       | `boolean`             | Controls if the place button icon is shown. Defaults to `true`.                                                          |
+| `placeButtonText`                           | `string`              | The text displayed on the place button. Defaults to empty string.                                                        |
+| `showRestartPlacementButton`                | `boolean`             | Controls if the restart placement button is shown. Defaults to `true`.                                                   |
+| `showRestartPlacementButtonIcon`            | `boolean`             | Controls if the restart placement button icon is shown. Defaults to `true`.                                              |
+| `restartPlacementButtonText`                | `string`              | The text displayed on the restart placement button. Defaults to empty string.                                            |
+| `longPressToMove`                           | `LongPressMode`       | Defines behavior of long press. Can be `none`, `toggle`, or `hold`. Defaults to `LongPressMode.none`.                    |
+| `showLongPressInstructionOnPlace`           | `boolean`             | Controls if an instruction for moving the object appears when first placed. Defaults to `false`.                         |
+| `longPressInstruction`                      | `string`              | Instruction message shown at initial placement. Defaults to "Tap and hold to move".                                      |
+| `placeButtonHorizontalAlignment`            | `HorizontalAlignment` | Horizontal alignment of the place button. Can be `left`, `center`, or `right`. Defaults to `HorizontalAlignment.center`. |
+| `placeButtonVerticalAlignment`              | `VerticalAlignment`   | Vertical alignment of the place button. Can be `top`, `center`, or `bottom`. Defaults to `VerticalAlignment.bottom`.     |
+| `restartPlacementButtonHorizontalAlignment` | `HorizontalAlignment` | Horizontal alignment of the restart button. Can be `left`, `center`, or `right`. Defaults to `HorizontalAlignment.left`. |
+| `restartPlacementButtonVerticalAlignment`   | `VerticalAlignment`   | Vertical alignment of the restart button. Can be `top`, `center`, or `bottom`. Defaults to `VerticalAlignment.bottom`.   |
+| `placeUIClassList`                          | `string[]`            | Additional CSS classes for the place UI. Defaults to `["zappar-three-place-ui"]`.                                        |
